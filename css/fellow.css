@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+html, body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 100%;
+  background-color: #f5f5f5;
+  color: #000;
+}
+.fellow-banner{
+  width: 100vw;
+  height: 100vh;
+}
+.banner-background{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Images/participantsWriting.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.banner-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text h1{
+  display: flex;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 20%;
+}
+
+.tutor-text-condition{
+  margin-top: 2.5rem;
+  padding: 2rem 10rem;
+}
+.tutors-text-title, 
+.read-condition{
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.read-condition{
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.tutor-text{
+  font-size: 1.2rem;
+}
+.tutor-text p{
+  font-size: 1.2rem;
+}
+.tutor-text p .condition{
+padding: 2rem 0 2rem 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.tutor-text .condition h1{
+ font-size: 1.3rem;
+}
+
+#more5{
+  display: none;
+}
+#moreBtn5{
+  padding: 0.3rem 0.5rem;
+  border: none;
+  font-size: 1.3rem;
+  color: #8f8f8f;
+  background: none;
+}
+ #moreBtn5:hover{
+  color: #05014b;
+  transition: 0.3s ease;
+}
+/*----- TUTORS REGISTRATION SECTION----*/
+.form-Container{
+  margin-top: 4rem;
+  justify-content: center;
+}
+.apply-btn-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1rem 0 4rem 0;
+}
+.apply-btn:hover{
+  background-color: #ffb703;
+  color: #000;
+  transition: 0.3s ease;
+  border: 1px solid #05014b;
+}
+.application-form h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.application-form{
+  max-width: 500px;
+  margin: 0rem auto 6rem auto;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.form-Container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-Container input[type="text"],
+.form-Container input[type="email"],
+.form-Container input[type="tel"],
+.form-Container select,
+.form-Container textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-Container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+Button[type="button"],
+.form-Container button#submitButton[type="submit"] {
+  background-color: #05014b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 1rem;
+}
+Button[type="button"]:hover,
+.form-Container button#submitButton[type="submit"]:hover{
+  background-color: #ffb703;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+ button[type="button"]:hover,
+ button[type="submit"]:hover {
+  background-color: #ffe365;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.feedback-text{
+  padding: 0 10rem;
+  font-size: 1.2rem;
+}
+.tutor-contact-links{
+  margin: 2.5rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+.link-details a{
+  margin: 0 1rem;
+  border: 1px #05014b solid;
+  background-color: #05014b;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.link-details a i{
+  padding: 0 0.2rem;
+  font-weight: bold;
+}
+.link-details a:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #05014b;
+  color: #05014b;
+  transition: 0.3s ease;
+}
+
+/* Medium screens (601px to 900px) */
+@media screen and (max-width: 1024px){
+  .tutor-text-condition{
+    padding: 2rem 7%;
+  }
+  .feedback-text{
+    padding: 0 7%;
+    font-size: 1.2rem;
+  }
+}
+
+/* Large screens (901px and above) */
+@media screen and (min-width: 901px) {
+  .form-Container label,
+  .form-Container input,
+  .form-Container select,
+  .form-Container textarea {
+    width: 50%;
+  }
+}
+
+/* Medium screens (601px to 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .form-Container label,
+  .form-Container input,
+  .form-Container select,
+  .form-Container textarea {
+    width: 100%;
+  }
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px){
+  .tutor-text-condition{
+    padding: 2rem 5%;
+  }
+  .feedback-text{
+    padding: 0 5% 50px 5%;
+    font-size: 1.2rem;
+  }
+  .banner-text h1{
+    padding: 0 5%;
+    font-size: 25px;
+  }
+}
+
+
+/*----- SUBSCRIPTION FORM ---*/
+.subscribe-form-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px 0 70px 0;
+}
+.subscribe-form-container h3{
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 10px;
+}
+.subscribe-form{
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 320px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+}
+.subscribe-form-container input{
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #eee;
+  letter-spacing: 0.02rem;
+}
+ #subscribe{
+  text-align: right;
+  margin-left: 20px;
+  background-color: #ffb703;
+}
+#subscribe:hover{
+  background-color: #05014b;
+  transition: 0.3s ease;
+  color: #f9f9f9;
+}

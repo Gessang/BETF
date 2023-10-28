@@ -1,0 +1,367 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+html, body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 100%;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.blog-banner{
+  width: 100vw;
+  height: 100vh;
+}
+.banner-background{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/Images/womenDay3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.banner-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text h1{
+  text-align: center;
+  font-weight: 400;
+  padding: 0 10%;
+}
+.banner-text p{
+ font-size: 18px;
+ line-height: 1.8;
+ letter-spacing: 1.5px;
+ padding: 0 5%;
+ text-align: center;
+}
+/* Search Bar Styles */
+.search-bar {
+  text-align: center;
+  margin: 50px 0;
+  
+}
+#search-button{
+  background-color: #29103d;
+  color: #ddd;
+  padding: 2px;
+}
+#search-input, #search-button{
+  padding: 5px;
+  font-size: 16px;
+}
+ #search-button:hover{
+  background-color: #eff365;
+  color: #000;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* DEFAULT POST SECTION */
+.post-content{
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 20px 20px 10px 20px;
+  border: 2px solid #c2c2c2;
+}
+
+
+ .post-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.full-width-post{
+  width: 100%;
+}
+.post-title{
+  font-size: 21px;
+  padding: 20px;
+}
+.post-data{
+  display: flex;
+  padding: 0;
+  border-top: 1px solid #ddd;
+}
+.post-data .category-date{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.social-media-share{
+  margin-top: 0;
+}
+
+.post-data .author{
+  margin-top: 1px;
+  margin-right: 15px;
+}
+
+.social-media-share{
+  padding: 20px 0 0 0;
+  color: #29103d;
+  font-size: 18px;
+}
+.share-button{
+  padding: 0 10px;
+  cursor: pointer;
+}
+.share-button::after{
+  content: attr(title);
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.share-button:hover::after{
+  display: block;
+}
+
+.post-image{
+  width: 100%;
+  height: 500px;
+  margin-top: 15px;
+}
+.post-image img{
+  width: 100%;
+  height: 100%;
+}
+.post-text{
+  padding: 40px 0;
+}
+
+.post-text .subheading{
+  padding: 20px 0;
+}
+
+.post-text .subheading p{
+  padding-top: 10px;
+}
+/* Additional Styling for post-Card and blog-cards and Author */
+
+.today-post, .recent-posts{
+  margin: 30px  0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slide-container{
+  max-width: 1500px;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 29px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.card{
+  background-color: #FFF;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  flex-direction: column;
+}
+
+.card-image{
+  height: 50%;
+  width: 100%;
+  
+}
+.card-image img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+.card:hover .card-image img{
+  opacity: 0.6;
+}
+.card a{
+  display: flex;
+  background-color: transparent;
+  opacity: 1;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.button{
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  margin-right: 15px;
+}
+.hover-text{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  transition: opacity 0.3s;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.card:hover .hover-text{
+ opacity: 1;
+}
+
+.blog-card-text{
+  padding-top: 7px;
+  text-align: center;
+}
+.blog-card-text p{
+  text-align: left;
+  font-size: 16px;
+}
+.category-date{
+  display: flex;
+  background-color: #eaeaea;
+  padding: 3px;
+  font-size: 13px;
+}
+.category-date span{
+  font-weight: 600;
+  color: #333333;
+}
+.hyphen{
+  font-size: 15px;
+  padding: 0 10px;
+}
+.category-date p{
+  font-weight: normal;
+  color: #636363;
+  text-align: left;
+}
+.author {
+  display: flex;
+  margin-top: 10px;
+  border-top: 2px solid #ddd;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.author-details{
+  margin-left: 10px;
+  font-size: 13px;
+  margin-top: 7px;
+}
+.author-details span{
+  font-weight: 600;
+  color: #555;
+}
+
+.author-details p{
+  font-weight: normal;
+  color: #868686;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: #29103d;
+  font-size: 10px;
+  padding: 30px 15px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: ease 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    padding: 0 40px 0 0;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+  /*----- SUBSCRIPTION FORM ---*/
+  .subscribe-form-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .subscribe-form-container h3{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+  .subscribe-form{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 320px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  }
+  .subscribe-form-container input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #eee;
+    letter-spacing: 0.02rem;
+  }
+   #subscribe{
+    cursor: pointer;
+    text-align: right;
+    margin-left: 20px;
+    background-color: #ffb703;
+  }
+  #subscribe:hover{
+    transition: 0.3s ease;
+    background-color: #05014b;
+    color: #f5f5f5;
+  }

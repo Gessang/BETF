@@ -1,0 +1,28 @@
+/*
+* expandable menu started
+*/
+@media (max-width: 991px) {
+  .slider-one__title {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+  .slider-one__title br {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-one__nav,
+  .slider-two__nav {
+    display: none;
+  }
+  .slider-one__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider-one__title {
+    font-size: 27px;
+  }
+}

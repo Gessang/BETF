@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETF Blog</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/blog.css">       
+    <link rel="stylesheet" href="/css/common2.css">                    
+</head>
+<body>
+
+
+  <!-- BLOG BANNER -->
+  <div class="blog-banner">
+    <div class="banner-background">
+        <div class="banner-text">
+            <h1>Keep Abreast Of Our Programs And Activities</h1>
+            <p>Tips, Guide, Productivity Articles and more!</p>
+        </div>
+    </div>
+</div>
+
+<!-- SCROLL UP POINT -->
+<div id="scroll-up-point"></div>
+
+<!-- SEARCH BAR -->
+<div class="search-bar">
+<input type="text" id="search-input" placeholder="Search...">
+<button id="search-button">Search</button>
+</div>
+
+
+<!---- DEFAULT POST SECTION ----->
+<div class="today-post">Today's News</div> 
+
+<div class="post-content" id="post-content"></div>
+
+<!-- RECENT POST SECTION -->
+<div class="recent-posts">Most recent posts</div>   
+
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                
+                  <!-- CARD 1 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/AItraining.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                            </a> 
+                            <div class="category-date">
+                                <span>Teaching Tips</span><span class="hyphen">-</span>
+                                <p>Oct. 10th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>Leveraging AI For Effective Classroom Instructions</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Incidunt adipisci inventore enim molestias natus sequi
+                                </p> 
+                            </div>
+                            <div class="author">
+                                <img src="/images/GodwinInyang.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>L&D, Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div> 
+                 
+                        <!-- CARD 2 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/attendee1.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(2, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Productivity</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>Self-improvement Habits for Teachers</h2>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Accusantium facere repudiandae eos dolor laudantium ipsam cum, 
+                                    facilis ducimus repellat architecto amet, enim, officiis 
+                                    reiciendis molestiae vel cumque sunt numquam aliquam?</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/JosephEffiong.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Joseph Effiong</span>
+                                    <p>Educator</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 3 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/womenDay.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(3, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Productivity</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>Finding your Purpose as a Teacher</h2>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Accusantium facere repudiandae eos dolor laudantium ipsam cum, 
+                                    facilis ducimus repellat architecto amet, enim, officiis 
+                                    reiciendis molestiae vel cumque sunt numquam aliquam?</p>
+                            </div>
+                            <div class="author">
+                                <img src="/Images/OkonRachael.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Okon, Rachael</span>
+                                    <p>Educator</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 4 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/college of education.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Productivity</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/speaker1.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 5 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/googleToolsSession3.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/Testifier.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 6 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/googleToolsSession1.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/UnyimeAsuquo.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 7 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/futureTeachingFlex.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/ilearnar.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 8 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/AttenddeesShot.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/college of education.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- CARD 9 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/audienceAndSpeaker2.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/speaker1.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+<!-- --------CARD 8 --------->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/googleToolsTeamFlex.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/college of education.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                            <img src="/Images/rootub.jpg" alt="" class="card-img">
+                            </div>
+                            <a href="#scroll-up-point">
+                                <button onclick="loadPost(1, event)" class="button">
+                            <div class="hover-text">Read more</div>
+                        </button>
+                    </a> 
+                            <div class="category-date">
+                                <span>Ilearnar</span><span class="hyphen">-</span>
+                                <p>Aug 30th, 2023</p>
+                            </div> 
+                            <div class="blog-card-text">
+                                <h2>What is Ilearnar?</h2>
+                                <p>Ilearnar is an adult literacy center with a focus on helping 
+                                    people struggling with the use of...</p>
+                            </div>
+                            <div class="author">
+                                <img src="/images/GodwinInyang.jpg" alt="">
+                                <div class="author-details">
+                                    <span>Godwin Essang</span>
+                                    <p>Instructional Designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        <!-- /.site-footer__form -->
+<div class="subscribe-form-container">
+    <h3>Subscribe to our newsletter</h3>
+<form action="#" class="subscribe-form">
+    <input type="email" name="email" id="email" placeholder="Enter Email Address...">
+    <input type="submit" name="submit" id="subscribe" value="Subscribe">
+</form>
+</div>
+
+
+    <!-- Swiper JS -->
+    <script src="/javascript/swiper-bundle.min.js"></script>
+
+    <!-- blog JavaScript -->
+    <script src="/javascript/blog.js"></script>
+        <!-------------------other js files directories ---------------->
+        <script src="/javascript/jquery-3.6.0.min.js"></script>
+        <script src="/javascript/aos.js"></script>
+        <script src="/javascript/common.js"></script>
+        <script src="/javascript/reuse.js"></script>
+    </body>
+</html>
