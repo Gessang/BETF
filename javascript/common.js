@@ -84,9 +84,9 @@ footerContainer.innerHTML = `<div class="footer">
     <h2>Quick links</h2>
     <li> <a href="navigation/programs.html">programs</a> </li>
     <li> <a href="/navigation/fellow.html">Become a fellow</a> </li>
-    <li> <a href="/navigation/donate.html#donate">Donate</a></li>
-    <li> <a href="/navigation/donate.html#partner">Partner</a> </li>
-    <li> <a href="/navigation/donate.html#volunteer">Volunteer</a> </li>
+    <li> <a href="/navigation/donate.html">Donate</a></li>
+    <li> <a href="/navigation/donate.html">Partner</a> </li>
+    <li> <a href="/navigation/donate.html">Volunteer</a> </li>
     <li> <a href="/navigation/blog.html">Blog</a> </li>
     </div>
     <div class="icon-content">
@@ -94,11 +94,11 @@ footerContainer.innerHTML = `<div class="footer">
     <div class="icon-links">
     <a href="https://www.facebook.com"><i class="fab fa-facebook-f">
         </i></a>
-    <a href="#"><i class="fab fa-linkedin-in">
+    <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in">
         </i></a>
-    <a href="#"><i class="fa-brands fa-twitter">
+    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter">
         </i></a>
-    <a href="#"><i class="fab fa-youtube">
+    <a href="https://www.youtube.com"><i class="fab fa-youtube">
         </i></a>
     <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
     </div>
